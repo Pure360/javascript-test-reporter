@@ -54,7 +54,7 @@ Formatter.prototype.format = function(coverageData, callback) {
       }
       result.git = {
         head: results.head,
-        branch: results.branch,
+        branch: 'master',
         committed_at: results.committed_at
       };
       return callback(parseError, result);
